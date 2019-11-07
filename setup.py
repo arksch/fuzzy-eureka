@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 import os
-from setuptools import find_packages, setup
-
-
-EXCLUDE_FROM_PACKAGES = []  # 'dmt.exclude_module'
+from setuptools import setup
 
 
 def read(fname):
@@ -17,7 +14,10 @@ setup(name='DMT',
       long_description=read('README.md'),
       author='Arkadi Schelling',
       author_email='arkadi.schelling@gmail.com',
-      license='BSD',
-      packages=find_packages(exclude=EXCLUDE_FROM_PACKAGES),
+      url='https://github.com/arksch/fuzzy-eureka',
+      license='MIT',
+      packages=['dmt'],
+      package_dir={'dmt': 'dmt'},
+      package_data={'dmt': ['../data/*.csv']},
       install_requires=['numpy', 'scipy', 'cechmate', 'persim', 'intervaltree']
       )
