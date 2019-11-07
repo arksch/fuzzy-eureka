@@ -128,6 +128,9 @@ def main():
     result = run_experiment(args.deltas, args.runs,
                             complex_fnames=args.complexes,
                             algorithms=args.algorithms)
+    result["relative_reduction"] = result["result"] / result["size"]
+    pd.options.display.max_columns = 20
+    pd.options.display.max_rows = 100
     print(result.groupby(by=["algorithm", "delta", "size"]).describe()["relative_reduction"])
 
 
