@@ -1,0 +1,13 @@
+,complex,filename,run,points,dim,size,size_prereduced,delta,algorithm,result,time_s
+0,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_13.csv,326145534d1242ca90b03a2cb6de4331,2000,2,11973,7881,0.0,binning,4092,20.336348729000747
+1,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_13.csv,62ae888feeb141c3b635c0268009bebb,2000,2,11973,7881,0.01,binning,8382,69.61139171000104
+2,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_13.csv,0f17017048e549c5a8b48fbb0495cbcf,2000,2,11973,7881,0.05,binning,11660,110.08575584199934
+3,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_13.csv,df1df743291a484b8310d6f4a4c0aba1,2000,2,11973,7881,0.0,gradient,4092,5.2033299100003205
+4,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_13.csv,a9e4eed79a8f4833b45f9393a806c73a,2000,2,11973,7881,0.01,gradient,8196,62.221919890998834
+5,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_13.csv,91b8ebc2c8704311979224e8eb1821dc,2000,2,11973,7881,0.05,gradient,11678,115.16026881400103
+6,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_13.csv,380f65ef4a5a4d70b8be7daed3f0621e,2000,2,11973,7881,0.0,induced,4092,20.200720362998254
+7,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_13.csv,3d4746d57cc5454680524077a712faea,2000,2,11973,7881,0.01,induced,8450,151.37723187899974
+8,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_13.csv,8b8e794ed5ce4cc1ac9262ef20d30d4e,2000,2,11973,7881,0.05,induced,11672,143.32499814400217
+9,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_13.csv,bdb17eda42f7414d87bf0f00d5a89557,2000,2,11973,7881,0.0,perseus,7126,0.20845261899739853
+10,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_13.csv,57ce89bc91004f26854d549af8bebfbf,2000,2,11973,7881,0.01,perseus,8004,0.15719910100233392
+11,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_13.csv,5d7b4d166c8341039be433f61fd7951c,2000,2,11973,7881,0.05,perseus,11562,0.15246796899737092

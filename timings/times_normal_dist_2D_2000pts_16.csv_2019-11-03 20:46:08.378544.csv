@@ -1,0 +1,13 @@
+,complex,filename,run,points,dim,size,size_prereduced,delta,algorithm,result,time_s
+0,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_16.csv,4c9c83475993480a9349022a7d0cf81f,2000,2,11969,7831,0.0,binning,4138,20.059993126000336
+1,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_16.csv,a9eddecfb49d464fb49638b8ed38dc63,2000,2,11969,7831,0.01,binning,8280,67.23414442300054
+2,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_16.csv,84ba553d13c04e73b12be07ff1264a4d,2000,2,11969,7831,0.05,binning,11694,110.06912367599944
+3,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_16.csv,f99e0635dc484d6bb7da1593ea2b1eac,2000,2,11969,7831,0.0,gradient,4138,5.228099867999845
+4,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_16.csv,b4b4f1dd27a14da38beda3f38ccde1ae,2000,2,11969,7831,0.01,gradient,8148,61.673720113001764
+5,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_16.csv,b0813a7f78a34afeb4a25ad54b50655f,2000,2,11969,7831,0.05,gradient,11686,115.31662913899709
+6,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_16.csv,d119d001677a4f1f92c3ab6d27168acc,2000,2,11969,7831,0.0,induced,4138,20.252203680000093
+7,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_16.csv,7ccf05ab6c74462e9534f2bdb45349be,2000,2,11969,7831,0.01,induced,8380,177.49130816199977
+8,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_16.csv,bb4548cdec10418da600a89917d47541,2000,2,11969,7831,0.05,induced,11704,141.93799721899995
+9,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_16.csv,6997503a705a4579a3f25cc0794e21d6,2000,2,11969,7831,0.0,perseus,7150,0.16343976799907978
+10,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_16.csv,aaa485741a1047318fe8c070bc01ec5e,2000,2,11969,7831,0.01,perseus,7810,0.21757948200320243
+11,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_16.csv,aa56e09c171043649239bf42f6e91786,2000,2,11969,7831,0.05,perseus,11612,0.15415901799860876

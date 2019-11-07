@@ -1,0 +1,13 @@
+,complex,filename,run,points,dim,size,size_prereduced,delta,algorithm,result,time_s
+0,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_11.csv,858c5ab9cf61425f86e07cb771823297,2000,2,11969,7905,0.0,binning,4064,19.964603090998935
+1,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_11.csv,997b759ad66c46eb81152ecf3dff5a74,2000,2,11969,7905,0.01,binning,8442,70.24468598400017
+2,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_11.csv,4717cecf9acf4ac7ba438b9b7afc3401,2000,2,11969,7905,0.05,binning,11618,110.24496881199957
+3,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_11.csv,29d4241fbb3d40948f75c9d795905957,2000,2,11969,7905,0.0,gradient,4064,5.140237823999996
+4,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_11.csv,77b58f8c3f534969aae3a9f90342d02f,2000,2,11969,7905,0.01,gradient,8196,62.17263482499948
+5,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_11.csv,781eb9550b0147c59f4df5c8b83a4b0e,2000,2,11969,7905,0.05,gradient,11648,114.85191578099875
+6,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_11.csv,2507b295916c4849b01f2f0275320671,2000,2,11969,7905,0.0,induced,4064,20.249470651000593
+7,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_11.csv,3b52af53ba604347b85f1527813f626a,2000,2,11969,7905,0.01,induced,8524,166.70893749099923
+8,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_11.csv,36c0297f4a384f39bdef80e3d623ed3d,2000,2,11969,7905,0.05,induced,11624,143.61049110000022
+9,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_11.csv,1a5e6b52be3c4a8fb810e852a8efd73d,2000,2,11969,7905,0.0,perseus,7120,0.20371116299975256
+10,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_11.csv,f3eaf003f32f49a6b11713c2111fd485,2000,2,11969,7905,0.01,perseus,7966,0.1531367070001579
+11,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_11.csv,fdbeafe8d30f47ba8ebad5a7faa3d8c7,2000,2,11969,7905,0.05,perseus,11574,0.2112153890011541

@@ -1,0 +1,13 @@
+,complex,filename,run,points,dim,size,size_prereduced,delta,algorithm,result,time_s
+0,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_4.csv,b20574d05fc9453cb373e1ae3a47a5a1,2000,2,11977,7911,0.0,binning,4066,24.666889942000125
+1,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_4.csv,d4884e9b9c7a403d9a2df0002ade2ae3,2000,2,11977,7911,0.01,binning,8366,81.09320397299962
+2,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_4.csv,c452b6f6c31849dcb63865019c8a8309,2000,2,11977,7911,0.05,binning,11660,128.39856897600112
+3,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_4.csv,f60ee6e50a5043d48e27b9a1213e5d4a,2000,2,11977,7911,0.0,gradient,4066,6.37262125900088
+4,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_4.csv,528e357c402a450ab88f9c82d8ed1e11,2000,2,11977,7911,0.01,gradient,8188,76.46754671999952
+5,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_4.csv,05585783fd12476eb1ce08958e101635,2000,2,11977,7911,0.05,gradient,11672,130.26655033600036
+6,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_4.csv,323b42ad03314be5ad2c143ec936359b,2000,2,11977,7911,0.0,induced,4066,25.126678863000052
+7,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_4.csv,c7afbb40473b4f2f8073c298016c52fd,2000,2,11977,7911,0.01,induced,8410,193.51538058799997
+8,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_4.csv,1e1df1a03c964a358c1a457d552d4b34,2000,2,11977,7911,0.05,induced,11672,173.53867007500048
+9,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_4.csv,e8b62cfd795e4205b9999fa00c408b2f,2000,2,11977,7911,0.0,perseus,7116,0.18915509500038752
+10,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_4.csv,a60954e00b794e45b0dbcce7de868eb7,2000,2,11977,7911,0.01,perseus,7970,0.24545282300096005
+11,<class 'dmt.cechmate_wrap.AlphaComplex'>,normal_dist_2D_2000pts_4.csv,703466b0a59d431db7a45394b9a141ba,2000,2,11977,7911,0.05,perseus,11552,0.18163858200023242
