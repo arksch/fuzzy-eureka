@@ -36,7 +36,7 @@ def test_perseus_persistent_homology():
     from dmt.perseus import perseus_persistent_homology
     cechmate_complex = [([0], 0), ([1], 0), ([2], 0), ([3], 0),
                         ((0, 1), 1), ((1, 2), 2), ((2, 3), 3), ((0, 3), 4)]
-    dgms = perseus_persistent_homology(cechmate_complex)
+    dgms = perseus_persistent_homology(cechmate_complex=cechmate_complex)
     assert_allclose(dgms[0], [[0, 1], [0, 2], [0, 3], [0, np.inf]])
     assert_allclose(dgms[1], [[4, np.inf]])
 
@@ -48,6 +48,6 @@ def test_perseus_persistent_homology_approx():
     delta = 1
     cechmate_complex = [([0], 0), ([1], 0), ([2], 0), ([3], 0),
                         ((0, 1), 1), ((1, 2), 2), ((2, 3), 3), ((0, 3), 4)]
-    dgms = perseus_persistent_homology(cechmate_complex, delta=delta, deltatrick=True)
+    dgms = perseus_persistent_homology(cechmate_complex=cechmate_complex, delta=delta, deltatrick=True)
     assert_allclose(dgms[0], [[1, 3], [1, 3], [1, np.inf]])
     assert_allclose(dgms[1], [[5, np.inf]])
