@@ -4,7 +4,7 @@
 
 (With courtesy to github's repo name generator) 
 
-Code base for a paper by Alex Wagner and Arkadi Schelling.
+Code base for a paper by Arkadi Schelling and Alex Wagner.
 
 Extends ideas of Discrete Morse Theory from \[MN13\] *Konstantin Mischaikow and Vidit Nanda -
 Morse Theory for Filtrations and Efficient Computation of Persistent Homology, 2013*
@@ -13,12 +13,12 @@ Morse Theory for Filtrations and Efficient Computation of Persistent Homology, 2
 ## Rerun experiment
 
 To have the same environment there is a [**Docker**](https://www.docker.com/) 
-container built by the [Dockerfile]. 
+container built by the [Dockerfile](Dockerfile). 
 The container also includes the relevant commit of this repo with the 
 test data, the experiment and the outputs.
-You can start the container with
+You can download (~4GB) and start the container with
 ```
-sudo docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan/work registry-1-stage.docker.io/arksch/fuzzy-eureka:experiment
+docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan/work registry-1-stage.docker.io/arksch/fuzzy-eureka:experiment
 ```
 
 The `-v` option makes your current working directory accessible from 
@@ -114,7 +114,8 @@ to create the following image
 Install [Gudhi](https://gudhi.inria.fr/python/latest/installation.html),
 which is not packaged in pip (but with conda).
 We need Gudhi only for testing, as it computes the correct Bottleneck distances.
-By the time of writing [persim's Bottleneck](http://persim.scikit-tda.org/) was buggy.
+By the time of writing [persim's Bottleneck](http://persim.scikit-tda.org/) was
+ installable with `pip` but buggy.
 
 Run tests with
 ```
