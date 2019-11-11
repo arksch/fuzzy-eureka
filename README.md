@@ -112,9 +112,9 @@ pip install -r requirements.plot.txt
 
 Apart from methods in `dmt.plot` to plot persistence diagrams and
 cell complexes based on 2D point clouds this also allows to run the 
-scripts from [plot](plots/), e.g.
+scripts from [plots](plots/), e.g.
 ```
-python plot/plot_three_approximations.py
+python plots/plot_three_approximations.py
 ```
 to create the following image
 
