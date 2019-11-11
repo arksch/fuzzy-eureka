@@ -43,6 +43,28 @@ python timing.py --help
 
 There are [scripts](plots/) to recreate the plots used for the paper.
 
+### Fast Approximation
+
+The fastest approximative algorithm is *Binning* with Perseus.
+This code snippet shows how to use it.
+```python 
+import numpy as np
+from dmt import AlphaComplex
+from dmt.perseus import perseus_persistent_homology
+dim = 2
+samples = 1000
+delta = 0.01
+cplx = AlphaComplex(np.random.randn(samples, dim))
+diagrams = perseus_persistent_homology(cplx, delta=delta)
+```
+If you used the `-v` option when starting the Docker container,
+then you can replace the data with a general cell complex of your own choice.
+Note, that `boundary_matrix` can be a sparse `scipy.sparse` matrix.
+```python
+from  dmt import MorseComplex
+cplx = MorseComplex(boundary_matrix, cell_dimensions, filtration)
+```
+
 ## Using the Code
 
 Feel free to use this code for further development and research.
@@ -56,7 +78,7 @@ and [plot things](#plotting) without any further steps.
 
 ### As a Library
 
-The code is not packaged in pip.
+The code is not packaged in `pip`.
 If you are only planning to import this code, you can install it as a package.
 
 Clone the repo
@@ -76,21 +98,10 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-The fastest approximative algorithm is *Binning* with Perseus.
 Install [Perseus](https://people.maths.ox.ac.uk/nanda/perseus/index.html),
 then either put the executable at `./Perseus/perseus`
 or set the environment variable `export PERSEUSPATH=/home/abc/Perseus/perseus`
-This allows to run
-```python 
-import numpy as np
-from dmt import AlphaComplex
-from dmt.perseus import perseus_persistent_homology
-dim = 2
-samples = 1000
-delta = 0.01
-cplx = AlphaComplex(np.random.randn(samples, dim))
-diagrams = perseus_persistent_homology(cplx, delta=delta)
-```
+This allows to run the [`Binning` algorithm](#fast-approximation).
 
 ### Plotting
 
