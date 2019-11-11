@@ -18,6 +18,5 @@ setup(name='DMT',
       license='MIT',
       packages=['dmt'],
       package_dir={'dmt': 'dmt'},
-      package_data={'dmt': ['../data/*.csv']},
       install_requires=['numpy', 'scipy', 'cechmate', 'persim', 'intervaltree']
       )
