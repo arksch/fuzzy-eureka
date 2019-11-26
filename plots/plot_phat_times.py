@@ -12,7 +12,7 @@ from dmt import morse_approx_induced_matching, morse_approx_binning, morse_appro
 
 
 COMPLEX_FNAME = "normal_dist_2D_200pts_0.csv"
-OUTPATH = "runtimes_phat.pdf"
+OUTPATH = "runtimes_phat_v2.pdf"
 RECOMPUTE = False
 DELTAS = [0.002, 0.005, 0.01, 0.02, 0.03, 0.04, 0.05, 0.1, 0.2]
 RUNS = 20
@@ -55,21 +55,15 @@ def compute_times(cplx, deltas):
 
 def plot(times):
     plot_df = times
-    plot_df["reduction"][plot_df["reduction"] == "exact_morse"] = "exact"
-    f, (ax1, ax2) = plt.subplots(1, 2, gridspec_kw={'width_ratios': [1, 3]}, sharey=True, figsize=(8, 4))
-    f.subplots_adjust(wspace=0)
-    ax1 = sns.boxplot(x="delta", y="PHAT_time", fliersize=0, whis=0, linewidth=1, palette=sns.color_palette()[3:],
-                      data=plot_df[plot_df["reduction"].isin(["original", "exact"])],
-                      hue="reduction", ax=ax1)
-    ax1.set_xticks([])
-    ax1.set_xlabel("")
-    ax1.set_ylabel("PHAT reduction time (sec)")
-    ax2 = sns.lineplot(x="delta", y="PHAT_time",
-                       data=plot_df[plot_df["reduction"].isin(["binning", "induced", "gradient"])],
-                       hue="reduction", ax=ax2)
-    plt.setp(ax2.get_yticklabels(), visible=False)
-    ax2.set_ylabel("")
-    ax2.set_xlim((0, 0.2))
+    plot_df["reduction"][plot_df["reduction"] == "exact_morse"] = "exact_morse_reduce"
+    plot_df["reduction"][plot_df["reduction"] == "original"] = "no_reduction"
+    ax = sns.lineplot(x="delta", y="PHAT_time",
+                       data=plot_df,
+                       hue="reduction", ax=None)
+    ax.set_ylabel("PHAT reduction time (sec)")
+    ax = sns.scatterplot(x="delta", y="PHAT_time",
+                      data=plot_df[plot_df["reduction"].isin(["no_reduction", "exact_morse_reduce"])],
+                      hue="reduction", ax=ax, legend=None)
 
 
 def main():
