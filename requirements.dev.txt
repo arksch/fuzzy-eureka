@@ -1,5 +1,5 @@
 -r requirements.txt
 ipdb==0.11
-ipython==7.2.0
+ipython==7.16.3
 pytest==4.2.0
 pytest-cov==2.8.1
